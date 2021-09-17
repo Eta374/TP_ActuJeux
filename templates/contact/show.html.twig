@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<section class="indexnews d-flex justify-content-center align-items-center flex-column">
+    <h1>Contact</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ contact.id }}</td>
+            </tr>
+            <tr>
+                <th>NameContact</th>
+                <td>{{ contact.nameContact }}</td>
+            </tr>
+            <tr>
+                <th>LastnameContact</th>
+                <td>{{ contact.lastnameContact }}</td>
+            </tr>
+            <tr>
+                <th>EmailContact</th>
+                <td>{{ contact.emailContact }}</td>
+            </tr>
+            <tr>
+                <th>TelContact</th>
+                <td>{{ contact.telContact }}</td>
+            </tr>
+            <tr>
+                <th>MessageContact</th>
+                <td>{{ contact.messageContact }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-voirplus mb-1 ml-3" href="{{ path('contact_index') }}">back to list</a>
+
+    {{ include('contact/_delete_form.html.twig') }}
+</section>
+
+
+{% endblock %}

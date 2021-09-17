@@ -1,0 +1,419 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: contents;
+}
+
+h1, p, h2, h3, label, a, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    color: #fff!important;
+    border-top: 2px solid transparent;
+}
+
+.active {
+    border-top: 2px solid #f47920!important;
+}
+
+.nav-link:hover {
+    border-top: 2px solid #f47920!important;
+}
+
+
+.navbar {
+    background-color: black;
+
+    .nav-item {
+        color: #fff;
+        margin-left: 1rem!important;
+        margin-right: 1rem!important;
+    }
+}
+
+h2 {
+    color: #f47920;
+}
+
+.menuright {
+    position: relative;
+    width: 43%;
+    height: 51px;
+    background: #f47920;
+    border-bottom: 1px solid #f47920;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+    align-items: center;
+}
+
+.header-warp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    min-width: 320px;
+    z-index: 201;
+    background: linear-gradient(90deg, transparent 70%, #f47920 70%),url(./ressource/texture-dark.png);
+    border-bottom: 2px solid #f47920;
+}
+
+.accueil {
+    background: #343a40;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: max-content;
+
+    h2 {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    
+}
+
+.img-carte {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.card iframe {
+    display: none;
+}
+
+.btn-voirplus {
+    color: #f47920;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f47920;
+}
+
+.btn-voirplus:hover {
+    color: #fff;
+    background-color: #f47920;
+    border-color: #f47920;
+}
+
+// LOGIN
+
+.personneb {
+    display: flex;
+    align-items: center;
+    
+    p {
+        margin-right: 10px;
+    }
+}
+
+.personne {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    height: 100vh;
+
+    h1 {
+        text-align: center;
+    }
+
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: #f47920;
+        width: 400px;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            width: fit-content;
+            margin: 1rem;
+            align-self: end;
+        }
+    }
+}
+
+.btn-sign {
+    color: #fff!important;
+    background-color: #f47920!important;
+    border-color: #f47920!important;
+}
+
+// MAIN
+
+.botm {
+    height: 10vh;
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+.bodyblock {
+    margin-top: 10rem;
+}
+
+.card p {
+    padding: 5px;
+}
+
+.cardtitle {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+// NEWS
+
+.showblock {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.indexnews {
+    height: fit-content;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.new {
+    height: 100vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            width: fit-content;
+            align-self: center;
+        }
+    }
+
+    #news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #news_genres, #news_platform {
+        align-items: baseline;
+
+        input {
+            margin: 5px;
+        }
+    }
+
+}
+
+
+#news_titleNews, #news_videoNews {
+    margin-left: 5rem;
+}
+
+// PLATFORM
+
+.plat {
+    height: 50vh;
+
+    form {
+        margin: 1rem;
+        text-align: center;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.platedit {
+    height: 50vh;
+
+    form {
+        margin-top: 1rem;
+        text-align: center;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.useredit {
+    height: 60vh;
+
+    form {
+        margin-top: 1rem;
+        text-align: center;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// SHOW
+
+.show {
+
+    tr {
+        margin: 1rem;
+    }
+
+    form .btn {
+        color: #fff;
+        background-color: #f47920;
+        border-color: #f47920;
+    }
+}
+
+// CONTACT
+
+.cont {
+    width: fit-content;
+    padding: 3rem;
+
+    h1 {
+        text-align: center;
+    }
+
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: #f47920;
+        width: 400px;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+.contact {
+    height: 100vh;
+
+    input {
+        width: 20rem;
+    }
+}
+
+#contact div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+
+    input {
+        margin-left: 1rem;
+    }
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    .btn-save {
+        color: #fff;
+        background-color: #f47920;
+        border-color: #f47920;
+    }
+}
+
+#contact_messageContact {
+    min-width: 20rem;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+form button {
+    color: #fff;
+    background-color: #f47920;
+    border-color: #f47920;
+    margin-left: 1rem;
+}
+
+// FILTRE
+
+.filtre {
+    margin-top: 10rem;
+    width: 30%;
+    background: #f47920;
+    color: #fff;
+}
+
+// INDEX
+
+.pass {
+    width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+
+}
+
+// REGISTER
+
+.inputcompte div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.creacompt {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    width: auto;
+    flex-direction: column;
+    width: 30rem;
+
+    button {
+        width: fit-content;
+        align-self: center;
+        color: #f47920;
+        background-color: transparent;
+        background-image: none;
+        border-color: #f47920;
+    }
+
+    
+    button:hover {
+        color: #fff;
+        background-color: #f47920;
+        border-color: #f47920;
+    }
+
+    #registration_form_email {
+        margin-left: 28px;
+    }
+
+    #registration_form_agreeTerms {
+        align-self: center;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    div {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Contact{% endblock %}
+
+{% block body %}
+<section class="contact bg-dark d-flex justify-content-center align-items-center flex-column">
+    <div class="container cont bg-light">
+        <h1>Formulaire de Contact</h1>
+        <div class="contactForm">
+            {{ include('contact/_form.html.twig') }}
+        </div>
+    </div>
+
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Genres{% endblock %}
+
+{% block body %}
+<section class="indexnews d-flex justify-content-center align-items-center flex-column">
+    <h1>Genres</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ genre.id }}</td>
+            </tr>
+            <tr>
+                <th>NameGenre</th>
+                <td>{{ genre.nameGenre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-voirplus mb-1 ml-3" href="{{ path('genres_index') }}">back to list</a>
+
+    <a class="btn btn-voirplus mb-1 ml-1" href="{{ path('genres_edit', {'id': genre.id}) }}">edit</a>
+
+    {{ include('genres/_delete_form.html.twig') }}
+</section>
+
+{% endblock %}

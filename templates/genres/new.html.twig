@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Genres{% endblock %}
+
+{% block body %}
+<section class="plat d-flex justify-content-center align-items-center flex-column">
+    <h1>Create new Genres</h1>
+
+    {{ include('genres/_form.html.twig') }}
+
+    <a class="btn btn-voirplus mb-1 ml-3" href="{{ path('genres_index') }}">back to list</a>
+</section>
+
+{% endblock %}

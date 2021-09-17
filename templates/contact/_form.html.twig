@@ -1,0 +1,5 @@
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-save mb-1 mr-1">{{ button_label|default('Envoyer') }}</button>
+    <a class="btn btn-voirplus mb-1 mr-1" href="{{ path('home') }}">retour</a>
+{{ form_end(form) }}

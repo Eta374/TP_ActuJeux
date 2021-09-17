@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+<section class="accueil bg-dark d-flex w-100 justify-content-center align-items-center">
+    <div class="container d-flex">
+ -->
+        <div class="container py-5 bg-light bodyblock">
+            <h2 class="display-4 text-center font-weight-bold">Actualité du jeux vidéo</h2>
+            <div class="row">
+                {% for news in news %}
+                <div class="col-md-4 col-sm-6 mt-2 mb-1">
+                    <div class="cardtitle">{{ news.titleNews }}</div>
+                    <div class="personneb">
+                        <p>Créer le</p>
+                        {{ news.dateNews ? news.dateNews|date('Y-m-d H:m') : '' }}
+                    </div>
+                    <div class="card shadow-sm">
+                        <img src="{{ asset('uploads/photos/' ~ news.imgNews) }}" class="card-img-top img-carte">
+                    </div>
+                    <div class="card body">
+                        <p class="card-text textcarte">{{ news.textNews|raw }}</p>
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-voirplus mt-3 mb-1 mr-1"
+                                href="{{ path('news_show', {'id': news.id}) }}">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<section class="botm bg-dark d-flex w-100 justify-content-center align-items-center"></section>
+
+
+
+
+{% endblock %}

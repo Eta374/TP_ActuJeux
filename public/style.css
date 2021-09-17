@@ -1,0 +1,473 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: contents;
+}
+
+h1, p, h2, h3, label, a, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+  color: #fff !important;
+  border-top: 2px solid transparent;
+}
+
+.active {
+  border-top: 2px solid #f47920 !important;
+}
+
+.nav-link:hover {
+  border-top: 2px solid #f47920 !important;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar .nav-item {
+  color: #fff;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+h2 {
+  color: #f47920;
+}
+
+.menuright {
+  position: relative;
+  width: 43%;
+  height: 51px;
+  background: #f47920;
+  border-bottom: 1px solid #f47920;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-warp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  min-width: 320px;
+  z-index: 201;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, transparent), color-stop(70%, #f47920)), url(./ressource/texture-dark.png);
+  background: linear-gradient(90deg, transparent 70%, #f47920 70%), url(./ressource/texture-dark.png);
+  border-bottom: 2px solid #f47920;
+}
+
+.accueil {
+  background: #343a40;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.accueil h2 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.img-carte {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card iframe {
+  display: none;
+}
+
+.btn-voirplus {
+  color: #f47920;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f47920;
+}
+
+.btn-voirplus:hover {
+  color: #fff;
+  background-color: #f47920;
+  border-color: #f47920;
+}
+
+.personneb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.personneb p {
+  margin-right: 10px;
+}
+
+.personne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login {
+  height: 100vh;
+}
+
+.login h1 {
+  text-align: center;
+}
+
+.login h1::after {
+  display: block;
+  height: 2px;
+  background-color: #f47920;
+  width: 400px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.btn-sign {
+  color: #fff !important;
+  background-color: #f47920 !important;
+  border-color: #f47920 !important;
+}
+
+.botm {
+  height: 10vh;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.bodyblock {
+  margin-top: 10rem;
+}
+
+.card p {
+  padding: 5px;
+}
+
+.cardtitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.showblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.indexnews {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+.new {
+  height: 100vh;
+}
+
+.new form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.new form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.new #news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new #news_genres, .new #news_platform {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.new #news_genres input, .new #news_platform input {
+  margin: 5px;
+}
+
+#news_titleNews, #news_videoNews {
+  margin-left: 5rem;
+}
+
+.plat {
+  height: 50vh;
+}
+
+.plat form {
+  margin: 1rem;
+  text-align: center;
+}
+
+.plat form div {
+  margin-bottom: 1rem;
+}
+
+.platedit {
+  height: 50vh;
+}
+
+.platedit form {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.platedit form div {
+  margin-bottom: 1rem;
+}
+
+.useredit {
+  height: 60vh;
+}
+
+.useredit form {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.useredit form div {
+  margin-bottom: 1rem;
+}
+
+.show tr {
+  margin: 1rem;
+}
+
+.show form .btn {
+  color: #fff;
+  background-color: #f47920;
+  border-color: #f47920;
+}
+
+.cont {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3rem;
+}
+
+.cont h1 {
+  text-align: center;
+}
+
+.cont h1::after {
+  display: block;
+  height: 2px;
+  background-color: #f47920;
+  width: 400px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.contact input {
+  width: 20rem;
+}
+
+#contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+}
+
+#contact div input {
+  margin-left: 1rem;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.contactForm .btn-save {
+  color: #fff;
+  background-color: #f47920;
+  border-color: #f47920;
+}
+
+#contact_messageContact {
+  min-width: 20rem;
+  min-height: 15vh;
+  max-height: 15vh;
+}
+
+form button {
+  color: #fff;
+  background-color: #f47920;
+  border-color: #f47920;
+  margin-left: 1rem;
+}
+
+.filtre {
+  margin-top: 10rem;
+  width: 30%;
+  background: #f47920;
+  color: #fff;
+}
+
+.pass {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.inputcompte div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.creacompt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30rem;
+}
+
+.creacompt button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #f47920;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f47920;
+}
+
+.creacompt button:hover {
+  color: #fff;
+  background-color: #f47920;
+  border-color: #f47920;
+}
+
+.creacompt #registration_form_email {
+  margin-left: 28px;
+}
+
+.creacompt #registration_form_agreeTerms {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.creacompt h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.creacompt div {
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */

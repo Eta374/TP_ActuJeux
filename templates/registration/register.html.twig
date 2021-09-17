@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<section class="login bg-dark d-flex w-100 justify-content-center align-items-center">
+    <div class="container creacompt bg-light">
+        <h1>Créer un compte</h1>
+        <div>
+            {{ form_start(registrationForm) }}
+        </div>
+        
+        <div class="inputcompte">
+            {{ form_row(registrationForm.nameUser, {
+                label: "Nom d'utilisateur :"
+                }) }}
+        </div>
+        
+        <div class="inputcompte">
+            {{ form_row(registrationForm.email, {
+                label: 'Email :'
+                }) }}
+        </div>
+        
+        <div class="inputcompte">
+            {{ form_row(registrationForm.plainPassword, {
+                label: 'Mot de passe :  '
+                }) }}
+        </div>
+
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="btn">Register</button>
+        {{ form_end(registrationForm) }}
+    </div>
+
+</section>
+
+{% endblock %}
